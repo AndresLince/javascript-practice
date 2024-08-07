@@ -18,8 +18,8 @@ const result = buildHTML`<li>${lines}</li>`;
 console.log(result);
 document.querySelector('#quotes').innerHTML = result; */
 
-const result = buildHTML`<li>${lines}</li>`;
-result('#quotes');
+const placeHtml = buildHTML`<li>${lines}</li>`;
+placeHtml('#quotes');
 
 function buildHTML(tags, lines) {
     return function(element) {
