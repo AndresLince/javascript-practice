@@ -15,3 +15,4 @@ function buildHTML(tags, lines) {
 
 const result = buildHTML`<li>${lines}</li>`;
 console.log(result);
+document.querySelector('#quotes').innerHTML = result;
