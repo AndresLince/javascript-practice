@@ -7,9 +7,11 @@ let lines = [
     orwell
 ]
 
-function buildHTML(strings, expr) {
-    console.log(strings);
-    console.log(expr);
+function buildHTML(tags, lines) {
+    return lines.map(function(line) {
+        return `${tags[0]}${line}${tags[1]}`;
+    });
 }
 
 const result = buildHTML`<li>${lines}</li>`;
+console.log(result);
